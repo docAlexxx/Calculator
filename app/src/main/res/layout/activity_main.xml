@@ -13,6 +13,7 @@
         android:scaleType="fitXY"/>
 
     <EditText
+        android:id="@+id/numbers_edit_view"
         android:layout_width="335dp"
         android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
@@ -21,6 +22,7 @@
         android:layout_marginTop="10dp"/>
 
     <EditText
+        android:id="@+id/process_edit_view"
         android:layout_width="185dp"
         android:layout_height="40dp"
         android:layout_gravity="end"
@@ -38,24 +40,28 @@
         tools:ignore="MissingConstraints">
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/number7_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
             app:srcCompat="@drawable/number7" />
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/number8_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
             app:srcCompat="@drawable/number8" />
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/number9_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
             app:srcCompat="@drawable/number9" />
 
         <Button
+            android:id="@+id/plus_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
@@ -63,24 +69,28 @@
             android:textSize="40dp"/>
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/number4_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
             app:srcCompat="@drawable/number4" />
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/number5_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
             app:srcCompat="@drawable/number5" />
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/number6_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
             app:srcCompat="@drawable/number6" />
 
         <Button
+            android:id="@+id/minus_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
@@ -88,24 +98,28 @@
             android:textSize="40dp"/>
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/number1_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
             app:srcCompat="@drawable/number1" />
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/number2_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
             app:srcCompat="@drawable/number2" />
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/number3_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
             app:srcCompat="@drawable/number3" />
 
         <Button
+            android:id="@+id/multiply_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
@@ -113,12 +127,14 @@
             android:textSize="40dp"/>
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/number0_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
             app:srcCompat="@drawable/number0" />
 
         <Button
+            android:id="@+id/dot_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
@@ -126,6 +142,7 @@
             android:textSize="40dp"/>
 
         <Button
+            android:id="@+id/plus_minus_change_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
@@ -133,6 +150,7 @@
             android:textSize="40dp"/>
 
         <Button
+            android:id="@+id/devide_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
@@ -140,6 +158,7 @@
             android:textSize="40dp"/>
 
         <Button
+            android:id="@+id/result_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
