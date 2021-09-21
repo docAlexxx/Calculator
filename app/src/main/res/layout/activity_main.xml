@@ -13,7 +13,7 @@
         android:scaleType="fitXY"/>
 
     <EditText
-        android:id="@+id/numbers_edit_view"
+        android:id="@+id/numbers_edit_text"
         android:layout_width="335dp"
         android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
@@ -22,7 +22,7 @@
         android:layout_marginTop="10dp"/>
 
     <EditText
-        android:id="@+id/process_edit_view"
+        android:id="@+id/action_edit_text"
         android:layout_width="185dp"
         android:layout_height="40dp"
         android:layout_gravity="end"
