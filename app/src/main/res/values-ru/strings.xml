@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Калькулятор</string>
+
+    <string name="button_delete">удал</string>
+
+    <string name="action_plus">сложение</string>
+    <string name="action_minus">вычитание</string>
+    <string name="action_mulyiply">умножение</string>
+    <string name="action_divide">деление</string>
+    <string name="action_result">равно</string>
+    
+</resources>

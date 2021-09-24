@@ -9,36 +9,42 @@
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/ocean" />
+        app:srcCompat="@drawable/ocean"
+        android:scaleType="fitXY"/>
 
     <EditText
         android:id="@+id/numbers_edit_text"
         android:layout_width="335dp"
         android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
         android:background="#B7FFBA"
-        android:textColor="@color/black" />
+        android:layout_marginTop="10dp"/>
 
     <EditText
         android:id="@+id/action_edit_text"
         android:layout_width="185dp"
         android:layout_height="40dp"
         android:layout_gravity="end"
-        android:layout_marginTop="95dp"
-        android:layout_marginEnd="45dp"
+        android:textColor="@color/black"
         android:background="#B7FFBA"
-        android:textColor="@color/black" />
-
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="45dp"/>
 
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="150dp"
         android:columnCount="4"
+        android:layout_marginTop="150dp"
         tools:ignore="MissingConstraints">
+
+       <com.google.android.material.button.MaterialButton
+
+           />
+
+
+
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/number7_button"
@@ -66,8 +72,8 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="5dp"
-            android:text="@string/button_plus"
-            android:textSize="40dp" />
+            android:text="+"
+            android:textSize="40dp"/>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/number4_button"
@@ -96,7 +102,7 @@
             android:layout_height="80dp"
             android:layout_margin="5dp"
             android:text="-"
-            android:textSize="40dp" />
+            android:textSize="40dp"/>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/number1_button"
@@ -125,7 +131,7 @@
             android:layout_height="80dp"
             android:layout_margin="5dp"
             android:text="x"
-            android:textSize="40dp" />
+            android:textSize="40dp"/>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/number0_button"
@@ -140,7 +146,7 @@
             android:layout_height="80dp"
             android:layout_margin="5dp"
             android:text="."
-            android:textSize="40dp" />
+            android:textSize="40dp"/>
 
         <Button
             android:id="@+id/plus_minus_change_button"
@@ -148,7 +154,7 @@
             android:layout_height="80dp"
             android:layout_margin="5dp"
             android:text="+-"
-            android:textSize="40dp" />
+            android:textSize="40dp"/>
 
         <Button
             android:id="@+id/devide_button"
@@ -156,18 +162,18 @@
             android:layout_height="80dp"
             android:layout_margin="5dp"
             android:text="/"
-            android:textSize="40dp" />
+            android:textSize="40dp"/>
 
         <Button
             android:id="@+id/result_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_margin="5dp"
             android:layout_row="4"
             android:layout_columnSpan="4"
             android:layout_gravity="fill"
-            android:layout_margin="5dp"
             android:text="="
-            android:textSize="40dp" />
+            android:textSize="40dp"/>
     </GridLayout>
 
 
