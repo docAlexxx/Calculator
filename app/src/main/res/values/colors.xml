@@ -8,8 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="number_button_color">#C80825E3</color>
-    <color name="action_button_color">#A400BCD4</color>
+    <color name="number_button_color">#F1DD59</color>
+    <color name="action_button_color">#00BCD4</color>
     <color name="number_button_text_color">#111111</color>
     <color name="action_button_text_color">#111111</color>
     <color name="screen_color">#9FDD98</color>

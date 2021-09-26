@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="ButtonStyle">
+  <style name="ButtonStyle">
         <item name="android:layout_height">@dimen/button_heigth</item>
-        <item name="android:layout_weight">@dimen/button_width</item>
+        <item name="android:layout_width">@dimen/button_width</item>
         <item name="android:layout_margin">@dimen/button_margin</item>
-        <item name="android:textSize">@dimen/button_text_size</item>
-        <item name="android:fontFamily">@font/numbers1</item>
+        <item name="rippleColor">@color/number_button_text_color</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">@dimen/button_stroke_width</item>
+        <item name="android:fontFamily">@font/numbers2</item>
     </style>
 
     <style name="ButtonStyle.Numbers">
         <item name="android:backgroundTint">@color/number_button_color</item>
         <item name="android:textColor">@color/number_button_text_color</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
     </style>
 
     <style name="ButtonStyle.Actions">
         <item name="android:backgroundTint">@color/action_button_color</item>
         <item name="android:textColor">@color/action_button_text_color</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+
+   <style name="ButtonStyle.ActionsSmall">
+        <item name="android:backgroundTint">@color/action_button_color</item>
+        <item name="android:textColor">@color/action_button_text_color</item>
+        <item name="android:textSize">@dimen/button_text_size_small</item>
     </style>
 
     <style name="ScreenStyle">
@@ -29,7 +40,7 @@
 
     <style name="ScreenStyle.Main">
         <item name="android:layout_height">@dimen/main_screen_heigth</item>
-        <item name="android:layout_weight">@dimen/main_screen_width</item>
+        <item name="android:layout_width">@dimen/main_screen_width</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:layout_marginTop">@dimen/main_screen_marginTop</item>
         <item name="android:textSize">@dimen/main_screen_text_size</item>
@@ -37,7 +48,7 @@
 
     <style name="ScreenStyle.Add">
         <item name="android:layout_height">@dimen/add_screen_heigth</item>
-        <item name="android:layout_weight">@dimen/add_screen_width</item>
+        <item name="android:layout_width">@dimen/add_screen_width</item>
         <item name="android:layout_gravity">end</item>
         <item name="android:layout_marginTop">@dimen/add_screen_marginTop</item>
         <item name="android:layout_marginEnd">@dimen/add_screen_marginEnd</item>
