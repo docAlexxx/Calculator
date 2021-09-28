@@ -54,4 +54,14 @@
         <item name="android:layout_marginEnd">@dimen/add_screen_marginEnd</item>
         <item name="android:textSize">@dimen/add_screen_text_size</item>
     </style>
+
+    <style name="ScreenStyle.MainLand">
+        <item name="android:layout_height">@dimen/main_screen_heigth</item>
+        <item name="android:layout_width">@dimen/main_screen_width</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:layout_marginStart">@dimen/double_margin</item>
+        <item name="android:layout_marginTop">@dimen/main_screen_marginTop</item>
+        <item name="android:textSize">@dimen/main_screen_text_size</item>
+    </style>
+
 </resources>

@@ -2,5 +2,13 @@
 <resources>
 
     <dimen name="button_width">110dp</dimen>
+    <dimen name="button_heigth">50dp</dimen>
+    <dimen name="button_text_size">25dp</dimen>
+    <dimen name="button_text_size_small">25dp</dimen>
+    <dimen name="main_screen_width">400dp</dimen>
+    <dimen name="main_screen_heigth">60dp</dimen>
+    <dimen name="add_screen_marginEnd">60dp</dimen>
+    <dimen name="add_screen_marginTop">30dp</dimen>
+    <dimen name="button_square_marginTop">85dp</dimen>
 
 </resources>
