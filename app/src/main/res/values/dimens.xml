@@ -25,5 +25,15 @@
 
     <dimen name="button_square_marginTop">150dp</dimen>
 
+    <dimen name="theme_shoose_button_width">300dp</dimen>
+    <dimen name="theme_shoose_button_height">100dp</dimen>
+    <dimen name="theme_shoose_text_size">30dp</dimen>
+    <dimen name="theme_shoose__corner_radius">@dimen/double_margin</dimen>
+
+    <dimen name="theme_settings_button_width">250dp</dimen>
+    <dimen name="theme_settings_button_height">40dp</dimen>
+    <dimen name="theme_settings_text_size">15dp</dimen>
+
+
 
 </resources>

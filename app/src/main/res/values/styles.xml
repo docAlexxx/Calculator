@@ -64,4 +64,42 @@
         <item name="android:textSize">@dimen/main_screen_text_size</item>
     </style>
 
+    <style name="ThemeButtonStyle">
+        <item name="android:layout_height">@dimen/theme_shoose_button_height</item>
+        <item name="android:layout_width">@dimen/theme_shoose_button_width</item>
+        <item name="android:layout_margin">@dimen/default_margin</item>
+        <item name="rippleColor">@color/purple_200</item>
+        <item name="cornerRadius">@dimen/theme_shoose__corner_radius</item>
+        <item name="android:fontFamily">@font/numbers1</item>
+        <item name="android:textSize">@dimen/theme_shoose_text_size</item>
+
+    </style>
+
+    <style name="ThemeButtonStyle.Day">
+        <item name="android:backgroundTint">@color/theme_choose_button_color_day</item>
+        <item name="android:text">@string/day_theme_button</item>
+        <item name="android:textColor">@color/theme_choose_text_color_day</item>
+    </style>
+
+    <style name="ThemeButtonStyle.Night">
+        <item name="android:backgroundTint">@color/theme_choose_button_color_night</item>
+        <item name="android:text">@string/night_theme_button</item>
+        <item name="android:textColor">@color/theme_choose_text_color_night</item>
+    </style>
+
+    <style name="ThemeSettingsStyle">
+        <item name="android:layout_height">@dimen/theme_settings_button_height</item>
+        <item name="android:layout_width">@dimen/theme_settings_button_width</item>
+        <item name="android:layout_margin">@dimen/default_margin</item>
+        <item name="rippleColor">@color/purple_500</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="android:fontFamily">@font/numbers1</item>
+        <item name="android:textSize">@dimen/theme_settings_text_size</item>
+        <item name="android:backgroundTint">@color/theme_choose_button_color_day</item>
+        <item name="android:text">@string/theme_setting_button</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+    </style>
+
+
 </resources>

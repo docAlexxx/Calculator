@@ -128,5 +128,9 @@
             android:text="@string/button_dot" />
     </GridLayout>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settings_button"
+        style="@style/ThemeSettingsStyle"
+        android:text="@string/theme_setting_button" />
 
 </FrameLayout>

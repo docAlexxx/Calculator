@@ -15,4 +15,9 @@
     <color name="screen_color">#9FDD98</color>
     <color name="screen_text_color">#111111</color>
 
+    <color name="theme_choose_button_color_night">#2863A5</color>
+    <color name="theme_choose_button_color_day">#EDE877</color>
+    <color name="theme_choose_text_color_night">#F4DC02</color>
+    <color name="theme_choose_text_color_day">#0441F3</color>
+
 </resources>

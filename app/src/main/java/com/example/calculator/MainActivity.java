@@ -3,6 +3,7 @@ package com.example.calculator;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private MaterialButton resultButton;
     private MaterialButton deleteButton;
     private MaterialButton resetButton;
+    private MaterialButton settingButton;
     Calculator calculator = new Calculator();
 
     @Override
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         resultButton = findViewById(R.id.result_button);
         deleteButton = findViewById(R.id.delete_button);
         resetButton = findViewById(R.id.reset_button);
+        settingButton =findViewById(R.id.settings_button);
     }
 
     private void setupButtons() {
@@ -156,6 +159,7 @@ public class MainActivity extends AppCompatActivity {
             calculator.numberButtonPress("9");
             currentNumberToScreen();
         });
+
     }
 
     public void currentNumberToScreen() {

@@ -28,4 +28,8 @@
     <string name="action_divide">divide</string>
     <string name="action_result">result</string>
 
+    <string name="theme_setting_button">Theme settings</string>
+    <string name="night_theme_button">Night theme</string>
+    <string name="day_theme_button">Day theme</string>
+
 </resources>
