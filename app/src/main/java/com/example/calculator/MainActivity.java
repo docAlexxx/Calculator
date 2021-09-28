@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         resultButton = findViewById(R.id.result_button);
         deleteButton = findViewById(R.id.delete_button);
         resetButton = findViewById(R.id.reset_button);
-        settingButton =findViewById(R.id.settings_button);
+        settingButton = findViewById(R.id.settings_button);
     }
 
     private void setupButtons() {
@@ -83,28 +83,28 @@ public class MainActivity extends AppCompatActivity {
             currentNumberToScreen();
         });
         plusButton.setOnClickListener(v -> {
-            calculator.operationType(calculator.operation,"plus",  calculator.currentNumber);
+            calculator.operationType(calculator.operation, "plus", calculator.currentNumber);
             resulttNumberToScreen();
             actionEditText.setText(calculator.operation);
-            calculator.setEnter=false;
+            calculator.setEnter = false;
         });
         minusButton.setOnClickListener(v -> {
-            calculator.operationType(calculator.operation,"minus",  calculator.currentNumber);
+            calculator.operationType(calculator.operation, "minus", calculator.currentNumber);
             resulttNumberToScreen();
             actionEditText.setText(calculator.operation);
-            calculator.setEnter=false;
+            calculator.setEnter = false;
         });
         multiplyButton.setOnClickListener(v -> {
-            calculator.operationType(calculator.operation,"multiply",  calculator.currentNumber);
+            calculator.operationType(calculator.operation, "multiply", calculator.currentNumber);
             resulttNumberToScreen();
             actionEditText.setText(calculator.operation);
-            calculator.setEnter=false;
+            calculator.setEnter = false;
         });
         devideButton.setOnClickListener(v -> {
-            calculator.operationType(calculator.operation,"divide",  calculator.currentNumber);
+            calculator.operationType(calculator.operation, "divide", calculator.currentNumber);
             resulttNumberToScreen();
             actionEditText.setText(calculator.operation);
-            calculator.setEnter=false;
+            calculator.setEnter = false;
         });
         dotButton.setOnClickListener(v -> {
             calculator.dotButton();
@@ -158,6 +158,11 @@ public class MainActivity extends AppCompatActivity {
         number9Button.setOnClickListener(v -> {
             calculator.numberButtonPress("9");
             currentNumberToScreen();
+        });
+
+        settingButton.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ThemeChooseActivity.class);
+            startActivity(intent);
         });
 
     }
