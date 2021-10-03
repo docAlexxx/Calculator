@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Калькулятор</string>
+
+    <string name="button_delete">удал</string>
+
+    <string name="action_plus">сложение</string>
+    <string name="action_minus">вычитание</string>
+    <string name="action_mulyiply">умножение</string>
+    <string name="action_divide">деление</string>
+    <string name="action_result">равно</string>
+
+    <string name="theme_setting_button">Выбор темы</string>
+    <string name="night_theme_button">Ночная тема</string>
+    <string name="day_theme_button">Дневная тема</string>
+    
+</resources>
