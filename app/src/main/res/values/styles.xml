@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="ButtonStyle">
+        <item name="android:layout_height">@dimen/button_heigth</item>
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="rippleColor">@color/number_button_text_color</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">@dimen/button_stroke_width</item>
+        <item name="android:fontFamily">@font/numbers2</item>
+    </style>
+
+    <style name="ButtonStyle.Numbers">
+        <item name="android:backgroundTint">@color/number_button_color</item>
+        <item name="android:textColor">@color/number_button_text_color</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+
+    <style name="ButtonStyle.Actions">
+        <item name="android:backgroundTint">@color/action_button_color</item>
+        <item name="android:textColor">@color/action_button_text_color</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+
+   <style name="ButtonStyle.ActionsSmall">
+        <item name="android:backgroundTint">@color/action_button_color</item>
+        <item name="android:textColor">@color/action_button_text_color</item>
+        <item name="android:textSize">@dimen/button_text_size_small</item>
+    </style>
+
+    <style name="ScreenStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:fontFamily">@font/digital</item>
+        <item name="android:background">@color/screen_color</item>
+        <item name="android:textColor">@color/screen_text_color</item>
+    </style>
+
+    <style name="ScreenStyle.Main">
+        <item name="android:layout_height">@dimen/main_screen_heigth</item>
+        <item name="android:layout_width">@dimen/main_screen_width</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/main_screen_marginTop</item>
+        <item name="android:textSize">@dimen/main_screen_text_size</item>
+    </style>
+
+    <style name="ScreenStyle.Add">
+        <item name="android:layout_height">@dimen/add_screen_heigth</item>
+        <item name="android:layout_width">@dimen/add_screen_width</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginTop">@dimen/add_screen_marginTop</item>
+        <item name="android:layout_marginEnd">@dimen/add_screen_marginEnd</item>
+        <item name="android:textSize">@dimen/add_screen_text_size</item>
+    </style>
+
+    <style name="ScreenStyle.MainLand">
+        <item name="android:layout_height">@dimen/main_screen_heigth</item>
+        <item name="android:layout_width">@dimen/main_screen_width</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:layout_marginStart">@dimen/double_margin</item>
+        <item name="android:layout_marginTop">@dimen/main_screen_marginTop</item>
+        <item name="android:textSize">@dimen/main_screen_text_size</item>
+    </style>
+
+    <style name="ThemeButtonStyle">
+        <item name="android:layout_height">@dimen/theme_shoose_button_height</item>
+        <item name="android:layout_width">@dimen/theme_shoose_button_width</item>
+        <item name="android:layout_margin">@dimen/default_margin</item>
+        <item name="rippleColor">@color/purple_200</item>
+        <item name="cornerRadius">@dimen/theme_shoose__corner_radius</item>
+        <item name="android:fontFamily">@font/numbers1</item>
+        <item name="android:textSize">@dimen/theme_shoose_text_size</item>
+
+    </style>
+
+    <style name="ThemeButtonStyle.Day">
+        <item name="android:backgroundTint">@color/theme_choose_button_color_day</item>
+        <item name="android:text">@string/day_theme_button</item>
+        <item name="android:textColor">@color/theme_choose_text_color_day</item>
+    </style>
+
+    <style name="ThemeButtonStyle.Night">
+        <item name="android:backgroundTint">@color/theme_choose_button_color_night</item>
+        <item name="android:text">@string/night_theme_button</item>
+        <item name="android:textColor">@color/theme_choose_text_color_night</item>
+    </style>
+
+    <style name="ThemeSettingsStyle">
+        <item name="android:layout_height">@dimen/theme_settings_button_height</item>
+        <item name="android:layout_width">@dimen/theme_settings_button_width</item>
+        <item name="android:layout_margin">@dimen/default_margin</item>
+        <item name="rippleColor">@color/purple_500</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="android:fontFamily">@font/numbers1</item>
+        <item name="android:textSize">@dimen/theme_settings_text_size</item>
+        <item name="android:backgroundTint">@color/theme_choose_button_color_day</item>
+        <item name="android:text">@string/theme_setting_button</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+    </style>
+
+
+</resources>

@@ -3,31 +3,38 @@ package com.example.calculator;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.android.material.button.MaterialButton;
+
 public class MainActivity extends AppCompatActivity {
     private EditText numbersEditText;
     private EditText actionEditText;
-    private AppCompatImageView number0Button;
-    private AppCompatImageView number1Button;
-    private AppCompatImageView number2Button;
-    private AppCompatImageView number3Button;
-    private AppCompatImageView number4Button;
-    private AppCompatImageView number5Button;
-    private AppCompatImageView number6Button;
-    private AppCompatImageView number7Button;
-    private AppCompatImageView number8Button;
-    private AppCompatImageView number9Button;
-    private Button plusButton;
-    private Button minusButton;
-    private Button multiplyButton;
-    private Button devideButton;
-    private Button dotButton;
-    private Button plusMinusChangeButton;
-    private Button resultButton;
+    private MaterialButton number0Button;
+    private MaterialButton number1Button;
+    private MaterialButton number2Button;
+    private MaterialButton number3Button;
+    private MaterialButton number4Button;
+    private MaterialButton number5Button;
+    private MaterialButton number6Button;
+    private MaterialButton number7Button;
+    private MaterialButton number8Button;
+    private MaterialButton number9Button;
+    private MaterialButton plusButton;
+    private MaterialButton minusButton;
+    private MaterialButton multiplyButton;
+    private MaterialButton devideButton;
+    private MaterialButton dotButton;
+    private MaterialButton plusMinusChangeButton;
+    private MaterialButton resultButton;
+    private MaterialButton deleteButton;
+    private MaterialButton resetButton;
+    private MaterialButton settingButton;
+    Calculator calculator = new Calculator();
 
     @Override
 
@@ -35,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Calculator calculator= new Calculator();
         initElements();
         setupButtons();
 
@@ -44,77 +50,138 @@ public class MainActivity extends AppCompatActivity {
     private void initElements() {
         numbersEditText = findViewById(R.id.numbers_edit_text);
         actionEditText = findViewById(R.id.action_edit_text);
-        number0Button = findViewById(R.id.number0_button);
-        number1Button = findViewById(R.id.number1_button);
-        number2Button = findViewById(R.id.number2_button);
-        number3Button = findViewById(R.id.number3_button);
-        number4Button = findViewById(R.id.number4_button);
-        number5Button = findViewById(R.id.number5_button);
-        number6Button = findViewById(R.id.number6_button);
-        number7Button = findViewById(R.id.number7_button);
-        number8Button = findViewById(R.id.number8_button);
-        number9Button = findViewById(R.id.number9_button);
+        number0Button = findViewById(R.id.number_zero_button);
+        number1Button = findViewById(R.id.number_one_button);
+        number2Button = findViewById(R.id.number_two_button);
+        number3Button = findViewById(R.id.number_three_button);
+        number4Button = findViewById(R.id.number_four_button);
+        number5Button = findViewById(R.id.number_five_button);
+        number6Button = findViewById(R.id.number_six_button);
+        number7Button = findViewById(R.id.number_seven_button);
+        number8Button = findViewById(R.id.number_eight_button);
+        number9Button = findViewById(R.id.number_nine_button);
         plusButton = findViewById(R.id.plus_button);
         minusButton = findViewById(R.id.minus_button);
-        multiplyButton = findViewById(R.id.minus_button);
-        devideButton = findViewById(R.id.devide_button);
+        multiplyButton = findViewById(R.id.multiply_button);
+        devideButton = findViewById(R.id.divide_button);
         dotButton = findViewById(R.id.dot_button);
-        plusMinusChangeButton = findViewById(R.id.plus_minus_change_button);
+        plusMinusChangeButton = findViewById(R.id.change_number_sign_button);
         resultButton = findViewById(R.id.result_button);
+        deleteButton = findViewById(R.id.delete_button);
+        resetButton = findViewById(R.id.reset_button);
+        settingButton = findViewById(R.id.settings_button);
     }
 
     private void setupButtons() {
-        plusButton.setOnClickListener(v->{
-
+        resetButton.setOnClickListener(v -> {
+            calculator.resetButtonPress();
+            currentNumberToScreen();
+            actionEditText.setText(calculator.operation);
         });
-        minusButton.setOnClickListener(v->{
-
+        deleteButton.setOnClickListener(v -> {
+            calculator.deleteButtonPress();
+            currentNumberToScreen();
         });
-        multiplyButton.setOnClickListener(v->{
-
+        plusButton.setOnClickListener(v -> {
+            calculator.operationType(calculator.operation, "plus", calculator.currentNumber);
+            resulttNumberToScreen();
+            actionEditText.setText(calculator.operation);
+            calculator.setEnter = false;
         });
-        devideButton.setOnClickListener(v->{
-
+        minusButton.setOnClickListener(v -> {
+            calculator.operationType(calculator.operation, "minus", calculator.currentNumber);
+            resulttNumberToScreen();
+            actionEditText.setText(calculator.operation);
+            calculator.setEnter = false;
         });
-        dotButton.setOnClickListener(v->{
-
+        multiplyButton.setOnClickListener(v -> {
+            calculator.operationType(calculator.operation, "multiply", calculator.currentNumber);
+            resulttNumberToScreen();
+            actionEditText.setText(calculator.operation);
+            calculator.setEnter = false;
         });
-        plusMinusChangeButton.setOnClickListener(v->{
-
+        devideButton.setOnClickListener(v -> {
+            calculator.operationType(calculator.operation, "divide", calculator.currentNumber);
+            resulttNumberToScreen();
+            actionEditText.setText(calculator.operation);
+            calculator.setEnter = false;
         });
-        resultButton.setOnClickListener(v->{
-
+        dotButton.setOnClickListener(v -> {
+            calculator.dotButton();
+            currentNumberToScreen();
         });
-        number0Button.setOnClickListener(v->{
-
+        plusMinusChangeButton.setOnClickListener(v -> {
+            calculator.changeNumberSignPush();
+            currentNumberToScreen();
         });
-        number1Button.setOnClickListener(v->{
-
+        resultButton.setOnClickListener(v -> {
+            calculator.resultButtonPress();
+            resulttNumberToScreen();
+            actionEditText.setText(calculator.lastOperation);
         });
-        number2Button.setOnClickListener(v->{
-
+        number0Button.setOnClickListener(v -> {
+            calculator.numberButtonPress("0");
+            currentNumberToScreen();
         });
-        number3Button.setOnClickListener(v->{
-
+        number1Button.setOnClickListener(v -> {
+            calculator.numberButtonPress("1");
+            currentNumberToScreen();
         });
-        number4Button.setOnClickListener(v->{
-
+        number2Button.setOnClickListener(v -> {
+            calculator.numberButtonPress("2");
+            currentNumberToScreen();
         });
-        number5Button.setOnClickListener(v->{
-
+        number3Button.setOnClickListener(v -> {
+            calculator.numberButtonPress("3");
+            currentNumberToScreen();
         });
-        number6Button.setOnClickListener(v->{
-
+        number4Button.setOnClickListener(v -> {
+            calculator.numberButtonPress("4");
+            currentNumberToScreen();
         });
-        number7Button.setOnClickListener(v->{
-
+        number5Button.setOnClickListener(v -> {
+            calculator.numberButtonPress("5");
+            currentNumberToScreen();
         });
-        number8Button.setOnClickListener(v->{
-
+        number6Button.setOnClickListener(v -> {
+            calculator.numberButtonPress("6");
+            currentNumberToScreen();
         });
-        number9Button.setOnClickListener(v->{
-
+        number7Button.setOnClickListener(v -> {
+            calculator.numberButtonPress("7");
+            currentNumberToScreen();
         });
+        number8Button.setOnClickListener(v -> {
+            calculator.numberButtonPress("8");
+            currentNumberToScreen();
+        });
+        number9Button.setOnClickListener(v -> {
+            calculator.numberButtonPress("9");
+            currentNumberToScreen();
+        });
+
+        settingButton.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ThemeChooseActivity.class);
+            startActivity(intent);
+        });
+
     }
+
+    public void currentNumberToScreen() {
+        if (calculator.isError) {
+            numbersEditText.setText("ERROR");
+        } else {
+            numbersEditText.setText(calculator.currentNumber);
+        }
+    }
+
+    public void resulttNumberToScreen() {
+        if (calculator.isError) {
+            numbersEditText.setText("ERROR");
+        } else {
+            numbersEditText.setText(calculator.resultToScreen);
+        }
+    }
+
 
 }
